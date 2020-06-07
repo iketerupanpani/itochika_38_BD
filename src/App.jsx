@@ -1,14 +1,17 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
-import Mask from './components/Mask';
 import Message from './components/Message';
+import Ion from './components/Ionstick';
+import Rice from './components/Keanaricemask';
+import Base from './components/Basemakingmask';
+import Medi from './components/Medianswer';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 const App = () => {
-  const masks = ['ionstick', 'keanarichmask', 'basemakingmask', 'medianswer'];
   return (
     <BrowserRouter>
       <div>
-        <h1>Happy Birthday</h1>
+        <h1>　🎂　🎉　❤️</h1>
         <ul>
           <li><Link to='/'>メッセージ</Link></li>
           <li><Link to='/ionstick'>プレゼント１</Link></li>
@@ -18,10 +21,10 @@ const App = () => {
         </ul>
         <hr/>
         <Route exact path='/' component={Message} />
-        <Route path='/ionstick' render={props => <Mask mask={masks[0]} />} />
-        <Route path='/keanarichmask' render={props => <Mask mask={masks[1]} />} />
-        <Route path='/basemakingmask' render={props => <Mask mask={masks[2]} />} />
-        <Route path='/medianswer' render={props => <Mask mask={masks[3]} />} />
+        <Route path='/ionstick' component={Ion} />
+        <Route path='/keanarichmask' component={Rice}/>
+        <Route path='/basemakingmask' component={Base} />
+        <Route path='/medianswer' component={Medi} />
       </div>
     </BrowserRouter>
     );
