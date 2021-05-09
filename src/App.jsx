@@ -14,7 +14,10 @@ const App = () => {
         <h1>　🎂　🎉　❤️</h1>
         <ul>
           <li>
-            <Link to="/">2021年誕生日メッセージ</Link>
+            <Link to="/2021">2021年版</Link>
+          </li>
+          <li>
+            <Link to="/">誕生日メッセージ</Link>
           </li>
           <li>
             <Link to="/ionstick">Ion Stick</Link>
