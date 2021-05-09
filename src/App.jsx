@@ -35,6 +35,7 @@ const App = () => {
           </li>
         </ul>
         <hr />
+        <Route exact path="/2021" component={Message} />
         <Route exact path="/" component={Message} />
         <Route path="/ionstick" component={Ion} />
         <Route path="/keanarichmask" component={Rice} />
